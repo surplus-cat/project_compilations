@@ -6,7 +6,7 @@ export default class Three extends React.Component {
     flag: true,
     flagOne: 1
   };
-  click(data1,data2){
+  click(data1, data2){
     console.log('data1 值为',data1)
     console.log('data2 值为',data2)
   }

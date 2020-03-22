@@ -34,8 +34,7 @@ const routes = [
     path: "/user",
     component: User,
     requiresAuth: true, //需要登陆后才能跳转的页面
-
-    children: [ 
+    children: [
       {
         path: "/user/oneTen",
         component: SecondLevelComponent,

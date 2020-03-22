@@ -56,7 +56,7 @@ export default class TwentyFour extends React.Component {
   render() {
     return (
       <div>
-          <Button onClick={this.handleClick}>点击加1</Button>
+        <Button onClick={this.handleClick}>点击加1</Button>
         <p>点击次数为: {this.state.clicks}</p>
         <Modal>
           <Child />

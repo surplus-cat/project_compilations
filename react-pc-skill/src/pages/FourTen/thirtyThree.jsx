@@ -2,10 +2,10 @@ import React from 'react'
 
 const Header = () => {
   const heading = '头部组件'
-  return(
-      <div style={{backgroundColor:'orange'}}>
-          <h1>{heading}</h1>
-      </div>
+  return (
+    <div style={{ backgroundColor: 'orange' }}>
+      <h1>{heading}</h1>
+    </div>
   )
 }
 
@@ -19,21 +19,21 @@ const footerStyle = {
 }
 
 export const Footer = () => {
-  return(
-      <div style={footerStyle}>
-          底部组件
-      </div>
+  return (
+    <div style={footerStyle}>
+      底部组件
+    </div>
   )
 }
 
-export default class ThirtyThree extends React.Component{
+export default class ThirtyThree extends React.Component {
 
-    render(){
-        return (
-            <div>
-              <Header></Header>
-              <Footer></Footer>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <Header></Header>
+        <Footer></Footer>
+      </div>
+    )
+  }
 }

@@ -11,6 +11,7 @@ class Parent extends Component {
   getChildren() {
     const _this = this;
     let { children } = _this.props;
+    // 这个方法的作用是复制组件,给组件传值或者添加属性
     return React.Children.map(children, child => {
       return React.cloneElement(child, {
         count: _this.state.count

@@ -4,9 +4,9 @@ export default class Ten extends React.Component {
   constructor() { // class 的主函数
     super() // React.Component.prototype.constructor.call(this),其实就是拿到父类的属性和方法
     this.state = {
-      arr:[]
+      arr: []
     }
-  }  
+  }
   render() {
     return (
       <div>

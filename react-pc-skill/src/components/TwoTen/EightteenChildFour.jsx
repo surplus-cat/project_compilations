@@ -3,7 +3,7 @@ import { Button } from "antd";
 
 export default class EightteenChildFour extends React.Component {
   state={
-      name:'这是组件EightteenChildFour的name 值'
+    name:'这是组件EightteenChildFour的name 值'
   }
 
   componentDidMount(){

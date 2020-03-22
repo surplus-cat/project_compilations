@@ -11,34 +11,34 @@ class NineteenChildOne extends React.Component {
 }
 
 export default class Nineteen extends React.Component {
-  state={
-    dialogOneFlag:false
-  }
-  
-  oneSubmit=()=>{
-    this.setState({dialogOneFlag:true})
+  state = {
+    dialogOneFlag: false
   }
 
-  oneCancel=()=>{
-    this.setState({dialogOneFlag:false})  
+  oneSubmit = () => {
+    this.setState({ dialogOneFlag: true })
   }
 
-  twoSubmit=()=>{
+  oneCancel = () => {
+    this.setState({ dialogOneFlag: false })
+  }
+
+  twoSubmit = () => {
     Dialog.show('这是弹层2')
   }
 
-  twoCancel=()=>{
+  twoCancel = () => {
     Dialog.hide()
   }
 
   render() {
-    const {dialogOneFlag} =this.state
+    const { dialogOneFlag } = this.state
     return <div>
-        <NineteenChildOne dialogOneFlag={dialogOneFlag}></NineteenChildOne>
-        <Button type="primary" onClick={this.oneSubmit}>点击出现弹层1</Button>
-        <Button onClick={this.oneCancel}>点击关闭弹层1</Button>
-        <Button type="primary" onClick={this.twoSubmit}>点击出现弹层2</Button>
-        <Button onClick={this.twoCancel}>点击关闭弹层2</Button>
+      <NineteenChildOne dialogOneFlag={dialogOneFlag}></NineteenChildOne>
+      <Button type="primary" onClick={this.oneSubmit}>点击出现弹层1</Button>
+      <Button onClick={this.oneCancel}>点击关闭弹层1</Button>
+      <Button type="primary" onClick={this.twoSubmit}>点击出现弹层2</Button>
+      <Button onClick={this.twoCancel}>点击关闭弹层2</Button>
     </div>;
   }
 }
