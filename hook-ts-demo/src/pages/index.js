@@ -5,7 +5,7 @@ import Loadable from 'react-loadable';
  const Loading = () => null;  //加载时不现实loading
 
 const Home = Loadable({
-  loader: () => import('../useMemo/ex.tsx'),
+  loader: () => import('../useMemo/index.tsx'),
   loading: Loading
 })
 
@@ -24,6 +24,31 @@ const State = Loadable({
   loading: Loading
 })
 
+const Memo = Loadable({
+  loader: () => import('../useMemo/index.tsx'),
+  loading: Loading
+})
+
+const Callback = Loadable({
+  loader: () => import('../useCallback/index.tsx'),
+  loading: Loading
+})
+
+const Reducer = Loadable({
+  loader: () => import('../useReducer/index.tsx'),
+  loading: Loading
+})
+
+const Context = Loadable({
+  loader: () => import('../useContext/index.tsx'),
+  loading: Loading
+})
+
+const SimpleRedux = Loadable({
+  loader: () => import('../useContext/simple-redux.tsx'),
+  loading: Loading
+})
+
 export {
-  Home, Ref, Effect, State
+  Home, Ref, Effect, State, Memo, Callback, Reducer, Context, SimpleRedux
 }
