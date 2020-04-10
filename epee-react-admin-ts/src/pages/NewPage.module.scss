@@ -1,0 +1,9 @@
+@import '~src/constants/const';
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: $page-margin $page-margin 0;
+  overflow: auto;
+}
